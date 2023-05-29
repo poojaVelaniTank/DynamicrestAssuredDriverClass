@@ -1,28 +1,29 @@
-package testClassPackage;
+package teClasPack;
 import static io.restassured.RestAssured.given;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import commonFunctionPackage.API_Common_Functions;
-import commonFunctionPackage.Utility_Common_Functions;
+
+import comFunPack.APIComFun;
+import comFunPack.UtilComFunct;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
-import requestRepositoryPackage.Post_Req_Repository;
-public class Post_TC1
+import reqRepoPack.Po_Re_Req;
+public class Post__TC___1
 {  @Test
 	public static void execute() throws IOException 
 	{       
 	    for(int i=0;i<5;i++)
 		{
-		int res_statuscode=API_Common_Functions.res_statusCode(Post_Req_Repository.base_URI(),
-				Post_Req_Repository.post_req_tc1(),Post_Req_Repository.post_resource());
+		int res_statuscode=APIComFun.res_statusCode(Po_Re_Req.base_URI(),
+				Po_Re_Req.post_req_tc1(),Po_Re_Req.post_resource());
 	    if( res_statuscode == 201 ) 
 	    {
-    	String res_responseBody=API_Common_Functions.res_responseBody(Post_Req_Repository.base_URI(),
-    			Post_Req_Repository.post_req_tc1(),Post_Req_Repository.post_resource());	
-	    Post_TC1.validator(res_responseBody, res_statuscode);
-	    Utility_Common_Functions.evidencecreator("Post_TC1",Post_Req_Repository.post_req_tc1(),res_responseBody);
+    	String res_responseBody=APIComFun.res_responseBody(Po_Re_Req.base_URI(),
+    			Po_Re_Req.post_req_tc1(),Po_Re_Req.post_resource());	
+	    Post__TC___1.validator(res_responseBody, res_statuscode);
+	    UtilComFunct.evidencecreator("Post_TC1",Po_Re_Req.post_req_tc1(),res_responseBody);
 	    break;
 	    }
 	    else
@@ -46,7 +47,7 @@ public class Post_TC1
 	//	System.out.println(res_createdAt);
 
 		//request body
-		JsonPath jspreq=new JsonPath(Post_Req_Repository.post_req_tc1());
+		JsonPath jspreq=new JsonPath(Po_Re_Req.post_req_tc1());
 		String req_name=jspreq.getString("name");
 		String req_job=jspreq.getString("job");
 		

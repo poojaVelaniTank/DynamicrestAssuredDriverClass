@@ -1,4 +1,4 @@
-package commonFunctionPackage;
+package comFunPack;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -11,7 +11,7 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.AfterTest;
-public class Utility_Common_Functions
+public class UtilComFunct
 {  @AfterTest
 public static void evidencecreator(String filename,String requestBody,String responseBody) throws IOException {
 File newfile=new File("C:\\Users\\Mites\\Desktop\\java"+filename+".txt");
