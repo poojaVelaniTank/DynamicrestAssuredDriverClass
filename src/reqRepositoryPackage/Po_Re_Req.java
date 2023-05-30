@@ -1,9 +1,9 @@
-package reqRepoPack;
+package reqRepositoryPackage;
 import java.io.IOException;
 import java.util.ArrayList;
 import org.testng.annotations.BeforeTest;
 
-import comFunPack.UtilComFunct;
+import commonFunctionPackage.UtilComFunct;
 public class Po_Re_Req {
 	@BeforeTest
 	public static String base_URI()

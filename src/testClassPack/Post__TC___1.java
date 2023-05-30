@@ -1,15 +1,15 @@
-package teClasPack;
+package testClassPack;
 import static io.restassured.RestAssured.given;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import comFunPack.APIComFun;
-import comFunPack.UtilComFunct;
+import commonFunctionPackage.APIComFun;
+import commonFunctionPackage.UtilComFunct;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
-import reqRepoPack.Po_Re_Req;
+import reqRepositoryPackage.Po_Re_Req;
 public class Post__TC___1
 {  @Test
 	public static void execute() throws IOException 

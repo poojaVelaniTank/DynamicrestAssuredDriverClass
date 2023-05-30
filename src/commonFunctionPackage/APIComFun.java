@@ -1,4 +1,4 @@
-package comFunPack;
+package commonFunctionPackage;
 
 import io.restassured.RestAssured;
 import static io.restassured.RestAssured.given;

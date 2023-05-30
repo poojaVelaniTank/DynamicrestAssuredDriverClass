@@ -5,7 +5,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 
-import comFunPack.UtilComFunct;
+import commonFunctionPackage.UtilComFunct;
 
 //import testClass.Post_TC_1;
 public class ClassDriv {
